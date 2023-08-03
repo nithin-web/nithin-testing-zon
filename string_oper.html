@@ -1,0 +1,63 @@
+
+<html>
+<title>strings in java script</title>
+<h1>All string operations</h1>
+<script>
+function calculate()
+{
+var str1=document.getElementById("operator1").value;
+var final=str1.length;
+document.getElementById("result1").value=final;
+   final=str1.toLowerCase();
+document.getElementById("result2").value=final;
+  final=str1.toUpperCase();
+document.getElementById("result3").value=final;
+var num=parseInt(document.getElementById("operator2").value);
+ final=str1.charAt(num);
+document.getElementById("result4").value=final;
+var str2=document.getElementById("operator3").value;
+final=str1.indexOf(str2);
+document.getElementById("result5").value=final;
+var num1=parseInt(document.getElementById("start").value);
+var num2=parseInt(document.getElementById("end").value);
+final=str1.slice(num1,num2);
+document.getElementById("result6").value=final;
+var str3=document.getElementById("operator4").value;
+final=str1+str3;
+document.getElementById("result7").value=final;
+}
+</script>
+<body bgcolor="blue">
+<p>enter string:</p></br>
+<input id="operator1"></br>
+<p>give the index value to extract the character</p>
+<input id="operator2"></br>
+<p>give the character to find the index value in the string</p>
+<input id="operator3"></br>
+<p>string slicing: enter starting and end index</p></br>
+<input id="start"></br>
+<input id="end"></br>
+<p>enter string2</p>
+<input id="operator4">
+<button onclick="calculate()">compute</button></br>
+<p>charAt given index</p>
+<input id="result4"></br>
+<p>indexof character</p>
+<input id="result5"></br>
+<p>substring obtained after string slicing</p>
+<input id="result6"></br>
+<p>concatenated string</p>
+<input id="result7"></br>
+<p> string length</p>
+<input id="result1"></br>
+<p> lower case</p>
+<input id="result2"></br>
+<p>upper case</p>
+<input id="result3"></br>
+</body>
+</html>
+
+
+
+
+
